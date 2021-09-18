@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Test</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  
+
+</head>
+
+<style>
+body{
+display:flex;
+flex-direction: column;
+margin:20px;
+background-color:#FF007F
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin-top:50px;
+    margin-bottom:50px;
+    font-size: 1.3em;
+    font-family: 'Poppins', sans-serif;
+    min-width: 400px;
+    padding:10px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.7);
+}
+.styled-table thead tr {
+    background-color: #CFB53B;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #FFDF00;
+}
+
+.styled-table tbody tr:nth-of-type(odd) {
+    background-color: #e5fc9a;
+}
+.styled-table tbody tr:nth-of-type(even){
+background-color:#999431;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #FFDF00;
+}
+.nav-wrapper {
+    background-color: rgb(255,223,0,0.8) !important;
+    padding-left : 10px;
+  }
+
+.sectionheading{
+font-family: 'Kaisei Tokumin', serif;
+font-size : 40px;
+box-shadow: 0.5rem 0.5rem black;
+background-color: #FF5733 ;
+padding:2px;
+margin-top:50px;
+margin-bottom:50px;
+color:white;
+text-align: center;
+} 
+.subheading{
+background-color:white;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 5px, rgba(0, 0, 0, 0.3) 0px 10px, rgba(0, 0, 0, 0.2) 0px 15px, rgba(0, 0, 0, 0.1) 0px 20px, rgba(0, 0, 0, 0.05) 0px 25px;
+font-family: 'Marmelad', sans-serif;
+font-size:20px;
+padding:10px;
+}
+
+.container{
+background-color:#FFDF00;
+padding:5px;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 5px, rgba(0, 0, 0, 0.3) 0px 10px, rgba(0, 0, 0, 0.2) 0px 15px, rgba(0, 0, 0, 0.1) 0px 20px, rgba(0, 0, 0, 0.05) 0px 25px;
+}
+.dashbox{
+background-color:white;
+border-style: dashed;
+padding:10px;
+font-family: 'Marmelad', sans-serif; 
+}
+
+</style>
+
+
+<body>
+
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"><img src = "https://i.ibb.co/L9cN2TG/New-Project.png" width="50px"> </img></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="http://letsproctor.herokuapp.com/">Home</a></li>
+        <li><a href="http://letsproctor.herokuapp.com/maketestform">Make Test</a></li>
+        <li><a href="http://letsproctor.herokuapp.com/resultform">Results</a></li>
+        <li><a href="http://letsproctor.herokuapp.com/info">How to Use</a></li>
+        <li><a href="https://drive.google.com/uc?export=download&id=18z5r6Z6mTai9_zvznRnLKSscVNoqWK0O">Download</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<div class = "sectionheading">
+Test Created
+</div>
+
+<div class="dashbox">
+<h3>This is what we got from you</h3>
+Test Name: {{result["title"]}}<br>
+Google Form Link: {{result["gformlink"]}}<br>
+Email Id: {{result["emailid"]}}<br>
+Unique Id generated: {{result["unique_id"]}}
+</div>
+  
+</body>
+</html>

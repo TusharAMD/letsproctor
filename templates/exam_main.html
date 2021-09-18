@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Test</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"></link>
+
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  
+
+</head>
+<style>
+body{
+display:flex;
+flex-direction: column;
+margin:20px;
+background-color:#34282C
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin-top:50px;
+    margin-bottom:50px;
+    font-size: 1.3em;
+    font-family: 'Poppins', sans-serif;
+    min-width: 400px;
+    padding:10px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.7);
+}
+img{
+position: fixed;
+top: 0;
+right: 0;
+} 
+.styled-table thead tr {
+    background-color: #CFB53B;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #FFDF00;
+}
+
+.styled-table tbody tr:nth-of-type(odd) {
+    background-color: #e5fc9a;
+}
+.styled-table tbody tr:nth-of-type(even){
+background-color:#999431;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #FFDF00;
+}
+.nav-wrapper {
+    background-color: rgb(255,223,0,0.8) !important;
+    padding-left : 10px;
+  }
+
+.sectionheading{
+font-family: 'Kaisei Tokumin', serif;
+font-size : 40px;
+box-shadow: 0.5rem 0.5rem black;
+background-color: #FFFFFF ;
+padding:2px;
+margin-top:50px;
+margin-bottom:50px;
+color:black;
+text-align: center;
+width:50vw;
+} 
+.subheading{
+background-color:white;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 5px, rgba(0, 0, 0, 0.3) 0px 10px, rgba(0, 0, 0, 0.2) 0px 15px, rgba(0, 0, 0, 0.1) 0px 20px, rgba(0, 0, 0, 0.05) 0px 25px;
+font-family: 'Marmelad', sans-serif;    
+font-size:20px;
+padding:10px;
+
+}
+
+.container{
+background-color:#FFDF00;
+padding:5px;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 5px, rgba(0, 0, 0, 0.3) 0px 10px, rgba(0, 0, 0, 0.2) 0px 15px, rgba(0, 0, 0, 0.1) 0px 20px, rgba(0, 0, 0, 0.05) 0px 25px;
+}
+
+
+</style>
+
+
+
+<body>
+
+
+
+<div class = "sectionheading">
+Best Of Luck
+</div>
+
+
+<img src = {{result.uploaded_url}}></img>
+
+<iframe src="{{result.g_form}}" width="640" height="1824" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+
+</p>
+       
+</body>
+</html>
