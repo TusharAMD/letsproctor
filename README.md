@@ -47,14 +47,6 @@ Use Windows OS (exe works on windows only)
 ![](https://i.ibb.co/SVqDfK4/image.png)
 ![](https://i.ibb.co/jr5mj6F/image.png)
 
-## What I learned from this project?
-I would say that in this project I learned a lot many things and also spend considerably longer time than other projects (don't know whether I am slow or project is big)
-This project was like a big crossover movie for me where different powers are used.
-<img src = "https://thumbs.gfycat.com/BogusWholeAuk-size_restricted.gif" width=250px></img>
-
-I have got to learn libraries like Flask, OpenCV, Mediapipe, Pymongo (first time used mongodb), selenium etc. Also I loved to brainstrom over logic and ideas, like how can I use a external tool like Imgbb to upload images and retrieve them, use of qr code for application change, leveraging selenium to execute scripts in browser, sending emails to user etc. Even after this I am not much impressed actually because there are some false positives detected and bug occurs during runtime. I am constantly updating it and making corrections and this project will be improved in coming days.
-
-With that I am also wondering that whether I can used node js to run all these processes in browser only and no requirement of external tool. Actually I started with node but I always find python more comfortable so sticked to python. So this is what my journey is about this project. This project is actually part of one hackathon and I hope I can improve it more.
 
 ## Author(s)
 
